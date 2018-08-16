@@ -9,11 +9,98 @@
 </head>
 <body>
     <h1>Areas of expertise in EE</h1>
-
+    
     <h1>&nbsp;</h1>
     <h1>2013</h1>
-    <p>Basics of Science Philosophy</p>
-    <p>Physics I</p>
+    <!-- Trigger/Open The Modal -->
+    <div class="modal-button" href="#myModal1">Basics of Science Philosophy</div>
+    
+    <!-- The Modal -->
+    <div id="myModal1" class="modal">
+    
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">×</span>
+          <h2>Basics of Science Philosophy</h2>
+        </div>
+        <div class="modal-body">
+          <h1>General description</h1>
+          <p>&nbsp;</p>
+          <p>There are three topics in this syllabus:</p>
+          <p>• General introduction to the philosophy and to the philosophy of science.</p>
+          <p>• Concepts used by scientists and analyzed by philosophers of science (scientific explanation, laws of nature, pseudoscience, theoretical concepts).</p>
+          <p>• The influence of external factors such as ethnicity, gender, political opinion, religiosity etc. to the scientists and scientific results.</p>
+          <h1>&nbsp;</h1>
+
+          <h1>General aim</h1>
+          <p>&nbsp;</p>
+          <p>The purpose of the course is to obtain (i) the elementary skills of philosophical argumentation, (ii) the ability to distinguish science from pseudoscience in the paradigmatic cases and (iii) the ability to give paradigmatic examples of the influence of external factors to the scientists and scientific results.</p>
+          <h1>&nbsp;</h1>
+
+          <h1>Aim</h1>
+          <p>&nbsp;</p>
+          <p>The student who has completed the course:</p>
+          <p>• distinguishes philosophy from every other way to get knowledge about the world;</p>
+          <p>• distinguishes philosophy of science from other branches of philosophy and other studies of science and technology;</p>
+          <p>• analyzes the basic concepts used by scientists;</p>
+          <p>• confirms the importance of history of science and sociology of science to the understanding of science and technology;</p>
+          <p>• confirms the influence of society to the scientific activities and results;</p>
+          <p>• distinguishes science from pseudoscience;</p>
+          <p>• values philosophical argumentations and its results;</p>
+          <h1>&nbsp;</h1>
+        </div>
+        <div class="modal-footer">
+          <h1>&nbsp;</h1>
+        </div>
+      </div>
+    
+    </div>
+
+    <!-- Trigger/Open The Modal -->
+    <div class="modal-button" href="#myModal2">Physics I</div>
+    
+    <!-- The Modal -->
+    <div id="myModal2" class="modal">
+    
+      <!-- Modal content -->
+      <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">×</span>
+            <h2>Physics I</h2>
+          </div>
+          <div class="modal-body">
+            <h1>General description</h1>
+            <p>&nbsp;</p>
+            <p>• Laws of kinematics and dynamics in translational and rotational motion;</p>
+            <p>• Concepts of work, power and energy;</p>
+            <p>• Oscillation;</p>
+            <p>• Hydromechanics;</p>
+            <p>• Fundamental laws of molecular physics;</p>
+            <p>• Isoprocesses in gases;</p>
+            <p>• Phenomina of transmission;</p>
+            <p>• Aggregation state of substance;</p>
+            <p>• Charts of substance state;</p>
+            <p>• Laws of thermodynamics;</p>
+            <p>• Thermal machines.</p>
+            <h1>&nbsp;</h1>
+  
+            <h1>General aim</h1>
+            <p>&nbsp;</p>
+            <p>The objective of the course is to provide knowledge in physics as the basic subject systematizing and creating order in natural facts thereat generalizing them and explaining causal connections; knowledge of physics laws which is a necessary condition for development and efficiency of technical industries.</p>
+            <h1>&nbsp;</h1>
+  
+            <h1>Aim</h1>
+            <p>&nbsp;</p>
+            <p>Student after completing the course knows fundamental laws of molecular physics and thermodynamics, knows how to implement this knowledge in the development of special fields of modern technology.</p>
+            <h1>&nbsp;</h1>
+          </div>
+          <div class="modal-footer">
+            <h1>&nbsp;</h1>
+          </div>
+        </div>
+    
+    </div>
     <p>Descriptive Geometry</p>
     <p>Mathematics</p>
     <p>Micro- and Macroeconomics</p>
@@ -73,5 +160,45 @@
     <p>Project Management</p>
     <p>Industrial Property and its Legal Protection</p>
     <p>Quality Science</p>
+
+
+<script>
+// Get the button that opens the modal
+var btn = document.querySelectorAll("div.modal-button");
+
+// All page modals
+var modals = document.querySelectorAll('.modal');
+
+// Get the <span> element that closes the modal
+var spans = document.getElementsByClassName("close");
+
+// When the user clicks the button, open the modal
+for (var i = 0; i < btn.length; i++) {
+ btn[i].onclick = function(e) {
+    e.preventDefault();
+    modal = document.querySelector(e.target.getAttribute("href"));
+    modal.style.display = "block";
+ }
+}
+
+// When the user clicks on <span> (x), close the modal
+for (var i = 0; i < spans.length; i++) {
+ spans[i].onclick = function() {
+    for (var index in modals) {
+      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+    }
+ }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target.classList.contains('modal')) {
+     for (var index in modals) {
+      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+     }
+    }
+}  
+</script>
+
 </body>
 </html>
