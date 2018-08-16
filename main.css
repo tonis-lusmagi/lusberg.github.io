@@ -1,6 +1,6 @@
 html {
-    font-family: 'Times New Roman', Times, serif;
-    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    padding: 14px;
 }
 
 h1 {
@@ -8,13 +8,13 @@ h1 {
     margin: 0;
 }
 
-span {
-    font-size: 20px;
+p {
+    font-size: 14px;
     margin: 0;
 }
 
-p {
-    font-size: 18px;
+span {
+    font-size: 20px;
     margin: 0;
 }
 
