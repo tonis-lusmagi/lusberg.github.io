@@ -8,6 +8,10 @@ h1 {
     margin: 0;
 }
 
+h2 {
+    text-align: center;
+}
+
 p {
     font-size: 16px;
     margin: 0;
@@ -89,9 +93,10 @@ a:active {
 /* The Close Button */
 .close {
     color: white;
-    float: right;
-    font-size: 28px;
+    float: left;
+    font-size: 26px; /*28 original*/
     font-weight: bold;
+    padding-top: 8px;
 }
 
 .close:hover,
